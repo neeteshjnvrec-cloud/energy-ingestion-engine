@@ -97,7 +97,7 @@ curl http://localhost:3000/v1/telemetry/vehicle/vehicle_001/current | jq
 ## 7. Get Vehicle Performance Analytics (24-hour)
 
 ```bash
-curl http://localhost:3000/v1/analytics/performance/vehicle_001 | jq
+curl http://localhost:3000/v1/analytics/performance/vehicle_001 | jq   # try with other like vehicle_005 etc
 ```
 
 Expected response:

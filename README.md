@@ -158,6 +158,8 @@ DATABASE_NAME=energy_platform
 # Development mode (with hot reload)
 npm run start:dev
 
+#you can follow 
+- `API_EXAMPLES.md` - More API examples
 # Production mode
 npm run build
 npm run start:prod
