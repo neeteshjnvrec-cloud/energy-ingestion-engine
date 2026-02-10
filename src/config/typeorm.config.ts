@@ -1,10 +1,14 @@
+
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { DataSource, DataSourceOptions } from 'typeorm';
 import * as dotenv from 'dotenv';
+import * as path from 'path';
 
-// 1. MANUALLY LOAD .ENV (This fixes the "neeteshkumar" error)
 dotenv.config(); 
 
+
+// This ensures it looks in the correct root directory regardless of where it's run
+dotenv.config({ path: path.resolve(__dirname, '../.env') }); 
 console.log('Connecting to Host:', process.env.DATABASE_HOST);
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
